@@ -39,5 +39,4 @@ Then:
 
 ### Notes
 - Install all required dependencies before running:
-  ```bash
-  pip install -r requirements.txt
+  
