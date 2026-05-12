@@ -1,35 +1,43 @@
 # XECG 
 
 
-How to Run
-1. Download the PTB-XL Dataset
+## How to Run
 
-Download the PTB-XL ECG dataset from PhysioNet PTB-XL Dataset
-.
+### 1. Download the PTB-XL Dataset
+Download the PTB-XL dataset from PhysioNet:
 
-After downloading, extract the dataset files into your working directory or Google Drive.
+https://www.physionet.org/content/ptb-xl/1.0.3/
 
-2. Run the Preprocessing Notebook
+After downloading, extract the dataset and place it in your working directory or Google Drive.
 
-Open and run the preprocessing notebook in Google Colab or Jupyter Notebook.
+---
 
-The preprocessing step will:
+### 2. Run the Preprocessing Notebook
+Open the preprocessing notebook in Google Colab or Jupyter Notebook.
 
-Load the PTB-XL ECG signals
-Clean and preprocess the data
-Generate the processed datasets required for training
+Make sure to:
+- Mount your Google Drive (if using Colab)
+- Update the dataset path inside the notebook
+- Run all cells to generate the processed data
 
-Make sure to update the dataset path inside the notebook to match your local or Drive directory.
+This step will:
+- Load raw ECG signals
+- Clean and preprocess the data
+- Prepare the dataset for training
 
-3. Train or Run a Model
+---
 
-After preprocessing is completed, run the notebook or script of the model you want to use.
+### 3. Train / Run the Model
+After preprocessing is complete, choose the model you want to run.
 
-Example workflow:
+Then:
+- Open the corresponding model notebook or script
+- Ensure the processed dataset path is correct
+- Run training or inference
 
-Preprocess the dataset
-Select the desired model notebook/script
-Train the model or run inference
-Notes
-Ensure all required dependencies are installed before running the notebooks.
-Using Google Colab with Google Drive is recommended because the PTB-XL dataset is large.
+---
+
+### Notes
+- Install all required dependencies before running:
+  ```bash
+  pip install -r requirements.txt
